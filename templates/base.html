@@ -9,7 +9,7 @@
   <title>
     {%block title%}
     INSAAPI
-    {% endblock %}
+    {% endblock title %}
   </title>
 
   <meta content="" name="description">
@@ -20,7 +20,7 @@
   <link href="{% static 'assets/img/g3.jpg' %}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link 
+  <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
 
@@ -36,7 +36,10 @@
   <link href="{% static 'assets/css/styles.css' %}" rel="stylesheet">
 </head>
 
+{% block body %}
+
 <body>
+  {% block header %}
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top header-transparent">
     <div class="container d-flex align-items-center justify-content-between">
@@ -50,41 +53,44 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About Us</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
+          <li><a class="nav-link scrollto" href="#about">Acerca de nosotros</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a class="nav-link scrollto" href="#services"><span>Servicios</span> <i
+                class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+              <li class="dropdown"><a class="nav-link scrollto" href="#services"><span>Desarrollo</span> <i
+                    class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
+                  <li><a class="nav-link scrollto" href="#services">Aplicaciones Web</a></li>
+                  <li><a class="nav-link scrollto" href="#services">Aplicaciones de Escritorio</a></li>
+                  <li><a class="nav-link scrollto" href="#services">Aplicaciones Móviles</a></li>
+                  <li><a class="nav-link scrollto" href="#services">Páginas Web</a></li>
+                  <li><a class="nav-link scrollto" href="#services">Servicio de pruebas</a></li>
                 </ul>
               </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
+              <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+              <li><a class="nav-link scrollto" href="#">Dominios</a></li>
+              <li><a class="nav-link scrollto" href="#">Alojamiento</a></li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contacto </a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
     </div>
   </header><!-- End Header -->
+  {% endblock header %}
 
+  {% block innerBody %}
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container" data-aos="fade-up">
-      <h1>Welcome to Squad</h1>
-      <h2>We are team of talented designers making websites with Bootstrap</h2>
+      <h1>Bienvenido a INSAAPI</h1>
+      <h2 style="color: rgb(255, 255, 255);">Somos un equipo de desarrolladores y diseñadores de software talentosos que crean Sitios Web,
+        <br>sitios de escritorios, aplicaciones android y también proporcionamos dominios y hospedajes.
+      </h2>
       <a href="#about" class="btn-get-started scrollto"><i class="bx bx-chevrons-down"></i></a>
     </div>
   </section><!-- End Hero -->
@@ -98,12 +104,20 @@
         <div class="row no-gutters">
           <div class="content col-xl-5 d-flex align-items-stretch" data-aos="fade-up">
             <div class="content">
-              <h3>Voluptatem dignissimos provident quasi</h3>
+              <h3>Acerca de...</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                INSAAPI es una organización de desarrollo de software de ritmo rápido establecida en 2019 que consta de
+                un sólido equipo de profesionales para el desarrollo de programas y tiene un historial comprobado de
+                implementación de aplicaciones complejas utilizando una suite de tecnología de vanguardia.
+                <br><br>
+                En INSAAPI creemos firmemente que los empleados son el mayor activo sin desgaste desde el día en que se
+                estableció.
+                <br>INSAAPI es un empleador que ofrece igualdad de oportunidades,
+                animando a todos sus empleados a actualizarse constantemente a las nuevas tecnologías
+                <br>con el fin de subir el listón y así satisfacer todas las necesidades de cualquier sistema,
+                <br>cumpliente y sobrepasando las espectativas de nuestros clientes.
               </p>
-              <a href="#" class="about-btn">About us <i class="bx bx-chevron-right"></i></a>
+              <!--<a href="#" class="about-btn">About us <i class="bx bx-chevron-right"></i></a>-->
             </div>
           </div>
           <div class="col-xl-7 d-flex align-items-stretch">
@@ -111,23 +125,27 @@
               <div class="row">
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
                   <i class="bx bx-receipt"></i>
-                  <h4>Corporis voluptates sit</h4>
-                  <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                  <h4>Reportería</h4>
+                  <p>Reportes e informes personalizados para cada software, representando los datos necesarios para
+                    obtener una mejor visualización del flujo que necesite el cliente</p>
                 </div>
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
                   <i class="bx bx-cube-alt"></i>
-                  <h4>Ullamco laboris nisi</h4>
-                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  <h4>Inteligencia Artificial</h4>
+                  <p>Servicios con inteligencia artificial como reconocimiento facial, traducción a distintos idimoas,
+                    chatbots personalizados y muchos servicios más...</p>
                 </div>
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
                   <i class="bx bx-images"></i>
-                  <h4>Labore consequatur</h4>
-                  <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                  <h4>Animación</h4>
+                  <p>Sistemas intuitivos y fácil de usar con animación adecuada para cada sistema web, móvil o de
+                    escritorio</p>
                 </div>
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
                   <i class="bx bx-shield"></i>
-                  <h4>Beatae veritatis</h4>
-                  <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+                  <h4>Seguridad e Integridad</h4>
+                  <p>Ofrecemos una alta integridad en la manipulación de datos, con una seguridad un sistema escalable
+                    con tolerancia a fallos (Disponibilidad del %99.95).</p>
                 </div>
               </div>
             </div><!-- End .content-->
@@ -610,7 +628,9 @@
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
+  {% endblock innerBody %}
 
+  {% block footer %}
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="footer-top">
@@ -686,6 +706,7 @@
       </div>
     </div>
   </footer><!-- End Footer -->
+  {% endblock footer %}
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
@@ -703,5 +724,6 @@
   <script src="{% static 'assets/js/main.js' %}"></script>
 
 </body>
+{% endblock body %}
 
 </html>
