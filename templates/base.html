@@ -31,6 +31,7 @@
   <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
   <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
   <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/css/font-awesome.min.css' %}" rel="stylesheet" />
   <!--<link href="{% static 'assets/vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">-->
 
   <!-- Template Main CSS File -->
@@ -56,27 +57,25 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
           <li><a class="nav-link scrollto" href="#about">Acerca de nosotros</a></li>
-          <li><a class="nav-link scrollto" href="#testimonials">Equipo de Trabajo</a></li>
-          <li><a class="nav-link scrollto" href="#team">Clientes</a></li>
           <li class="dropdown"><a class="nav-link scrollto" href="#services"><span>Servicios</span> <i
                 class="bi bi-chevron-down"></i></a>
             <ul>
-              <li class="dropdown"><a class="nav-link scrollto" href="#services"><span>Desarrollo</span> <i
-                    class="bi bi-chevron-right"></i></a>
-                <ul>
+              <li><a class="nav-link scrollto" href="#services"><span>Desarrollo</span></a>
+                <!--<ul>
                   <li><a class="nav-link scrollto" href="#services">Aplicaciones Web</a></li>
                   <li><a class="nav-link scrollto" href="#services">Aplicaciones de Escritorio</a></li>
                   <li><a class="nav-link scrollto" href="#services">Aplicaciones Móviles</a></li>
                   <li><a class="nav-link scrollto" href="#services">Páginas Web</a></li>
-                  <li><a class="nav-link scrollto" href="#services">Servicio de pruebas</a></li>
                 </ul>
-              </li>
-              <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-              <li><a class="nav-link scrollto" href="#">Dominios</a></li>
-              <li><a class="nav-link scrollto" href="#">Alojamiento</a></li>
+              </li>-->
+              <li><a class="nav-link scrollto" href="{% url 'portfolio' %}">Portfolio</a></li>
+              <li><a class="nav-link scrollto" href="#services">Dominios</a></li>
+              <li><a class="nav-link scrollto" href="#services">Alojamiento</a></li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="#contact">Contacto </a></li>
+          <li><a class="nav-link scrollto" href="#testimonials">Equipo de Trabajo</a></li>
+          <li><a class="nav-link scrollto" href="#team">Clientes</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contáctenos </a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -165,42 +164,53 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-          <h2>Services</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-            in iste officiis commodi quidem hic quas.</p>
+          <h2>Servicios</h2>
+          <p>Nuestro equipo de desarrollo de software comprende el sector de TI y las nuevas tendencias
+            tecnológicas.<br> Gracias a esto, los programas que proporcionamos son extremadamente competitivos,
+            reconociendo <br>y satisfaciendo las necesidades y requisitos de nuestros clientes.</p>
         </div>
 
         <div class="row">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+              <div class="icon"><i class="bx bx-calculator"></i></div>
+              <h4 class="title"><a href="">Programas</a></h4>
+              <p class="description">Creamos poderosos programas con tecnologías de vanguardia para proporcionar una
+                mejor experiencia al usuario.
+                <br>Programas de escritorio, aplicaciones Web (e-commerce, gestión empresarial, etc) y aplicaciones
+                móviles.
+              </p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+              <h4 class="title"><a href="">Páginas Web</a></h4>
+              <p class="description">Diseñamos páginas Web para pequeñas y grandes empresas. Mostrando los componentes
+                principales para lanzar su negocio
+                al mundo digital con vistas como: Home, About us, Contact y Services (Como la presente página).
+              </p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+              <div class="icon"><i class="bx bx-home"></i></div>
+              <h4 class="title"><a href="">Dominios</a></h4>
+              <p class="description">Brindamos dominios de distintos proveedores para que se acomoden a su necesidad.
+              </p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
               <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+              <h4 class="title"><a href="">Alojamiento</a></h4>
+              <p class="description">Contatmos con un ampplio conocimiento para migrar su programa a la nube en
+                distintos servicios y planes para que se acomoden a su negocio o empresa.
+                También brindamos seguimientos y soporte a los servicios de Aws (Amazon Web Servies).
+              </p>
             </div>
           </div>
 
@@ -209,12 +219,15 @@
       </div>
     </section><!-- End Services Section -->
 
-    <!-- ======= Counts Section ======= -->
-    <section id="counts" class="counts  section-bg">
-      <div class="container">
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
 
-        <div class="row no-gutters">
+        <!-- ======= Counts Section ======= -->
+        <section id="counts" class="counts  section-bg">
 
+            <div class="row no-gutters">
+              <!--
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
               <i class="bi bi-emoji-smile"></i>
@@ -222,56 +235,44 @@
                 class="purecounter"></span>
               <p><strong>Happy Clients</strong> consequuntur quae</p>
             </div>
-          </div>
+          </div>-->
+              <div class="col-lg-2 col-md-2 d-md-flex align-items-md-stretch">
+              </div>
 
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-            <div class="count-box">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p><strong>Projects</strong> adipisci atque cum quia aut</p>
+              <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+                <div class="count-box">
+                  <i class="bi bi-journal-richtext"></i>
+                  <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1"
+                    class="purecounter"></span>
+                  <p><strong>Más de 100 Proyectos</strong> y páginas web realizadas desde cero y terminadas con éxito.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+                <div class="count-box">
+                  <i class="bi bi-headset"></i>
+                  <span data-purecounter-start="0" data-purecounter-end="168" data-purecounter-duration="1"
+                    class="purecounter"></span>
+                  <p><strong>Horas de Soporte</strong> a la semana.</p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+                <div class="count-box">
+                  <i class="bi bi-people"></i>
+                  <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
+                    class="purecounter"></span>
+                  <p><strong>Trabajadores</strong> trabajando para cumplir cualquier necesidad al cliente</p>
+                </div>
+              </div>
+
             </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-            <div class="count-box">
-              <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-            <div class="count-box">
-              <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p><strong>Hard Workers</strong> rerum asperiores dolor</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Counts Section -->
-
-    <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
-      <div class="container" data-aos="zoom-in">
-
-        <div class="text-center">
-          <h3>Call To Action</h3>
-          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum.</p>
-          <a class="cta-btn" href="#">Call To Action</a>
-        </div>
-
+        </section><!-- End Counts Section -->
       </div>
     </section><!-- End Cta Section -->
 
-    <!-- ======= Portfolio Section ======= -->
+    <!-- ======= Portfolio Section ======= 
     <section id="portfolio" class="portfolio">
       <div class="container">
 
@@ -397,7 +398,7 @@
         </div>
 
       </div>
-    </section><!-- End Portfolio Section -->
+    </section> End Portfolio Section -->
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials section-bg">
@@ -431,7 +432,7 @@
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Encargado de velar por el equipo de trabajo en un determinado portafolio. Se encarga de optimizar y 
+                  Encargado de velar por el equipo de trabajo en un determinado portafolio. Se encarga de optimizar y
                   maximizar el valor del producto y tambié es la persona con el rol de Product Owner.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
@@ -445,7 +446,8 @@
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Profesionales capacitados encargados de desarrollar el programa, en ellos se encuentran: El Líder de Calidad,
+                  Profesionales capacitados encargados de desarrollar el programa, en ellos se encuentran: El Líder de
+                  Calidad,
                   El Documentador Técnico, Los Diseñadores Gráficos-UX y Los Desarrolladores como tal.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
@@ -461,28 +463,6 @@
       </div>
     </section><!-- End Testimonials Section -->
 
-<!-- ======= Our Clients Section =======
-    <section id="clients">
-      <div class="container" data-aos="zoom-in">
-
-        <header class="section-header">
-          <h3>Our Clients</h3>
-        </header>
-
-        <div class="owl-carousel clients-carousel">
-          <img src="../static/assets/img/team/team-1.jpg" alt="">
-          <img src="../static/assets/img/team/team-1.jpg" alt="">
-          <img src="../static/assets/img/team/team-1.jpg" alt="">
-          <img src="../static/assets/img/team/team-1.jpg" alt="">
-          <img src="../static/assets/img/team/team-1.jpg" alt="">
-          <img src="../static/assets/img/team/team-1.jpg" alt="">
-          <img src="../static/assets/img/team/team-1.jpg" alt="">
-          <img src="../static/assets/img/team/team-1.jpg" alt="">
-        </div>
-
-      </div>
-    </section> End Our Clients Section -->
-
     <!-- ======= Team Section ======= -->
     <section id="team" class="team">
       <div class="container">
@@ -495,17 +475,19 @@
 
           <div class="col-lg-4 col-md-6">
             <div class="member" data-aos="fade-up" data-aos-delay="150">
-              <div class="pic"><img src="{% static 'assets/img/clients/bebaby.jpg' %}" class="img-fluid" alt="" width="300" height="300"><br><br><br></div>
+              <div class="pic"><img src="{% static 'assets/img/clients/bebaby.jpg' %}" class="img-fluid" alt=""
+                  width="300" height="300"><br><br><br></div>
               <div class="member-info">
                 <h4>Bebabygt</h4>
-                <span>Aprendizaje Montessori, ideal   para el modelo educativo</span>
+                <span>Aprendizaje Montessori, ideal para el modelo educativo</span>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6">
             <div class="member" data-aos="fade-up">
-              <div class="pic"><img src="{% static 'assets/img/clients/animalhome.jpg' %}" class="img-fluid" alt="" width="300" height="300"><br><br><br></div>
+              <div class="pic"><img src="{% static 'assets/img/clients/animalhome.jpg' %}" class="img-fluid" alt=""
+                  width="300" height="300"><br><br><br></div>
               <div class="member-info">
                 <h4>Animal Home</h4>
                 <span>Tienda para mascotas</span>
@@ -515,7 +497,8 @@
 
           <div class="col-lg-4 col-md-6">
             <div class="member" data-aos="fade-up" data-aos-delay="300">
-              <div class="pic"><img src="{% static 'assets/img/clients/op00.jpeg' %}" class="img-fluid" alt="" width="300" height="300"><br><br><br></div>
+              <div class="pic"><img src="{% static 'assets/img/clients/op00.jpeg' %}" class="img-fluid" alt=""
+                  width="300" height="300"><br><br><br></div>
               <div class="member-info">
                 <h4>OpenDigital GT</h4>
                 <span>Venta y reparación de computadoras</span>
@@ -531,7 +514,8 @@
 
           <div class="col-lg-4 col-md-6">
             <div class="member" data-aos="fade-up" data-aos-delay="300">
-              <div class="pic"><img src="{% static 'assets/img/clients/corpcisa.webp' %}" class="img-fluid" alt="" width="500" height="500"><br><br><br></div>
+              <div class="pic"><img src="{% static 'assets/img/clients/corpcisa.webp' %}" class="img-fluid" alt=""
+                  width="500" height="500"><br><br><br></div>
               <div class="member-info">
                 <h4>Corpcisa</h4>
                 <span>Cerraduras Internacionales</span>
@@ -541,7 +525,8 @@
 
           <div class="col-lg-4 col-md-6">
             <div class="member" data-aos="fade-up" data-aos-delay="150">
-              <div class="pic"><img src="{% static 'assets/img/clients/alterna3.png' %}" class="img-fluid" alt="" width="500" height="500"><br><br><br></div>
+              <div class="pic"><img src="{% static 'assets/img/clients/alterna3.png' %}" class="img-fluid" alt=""
+                  width="500" height="500"><br><br><br></div>
               <div class="member-info">
                 <h4>Alterna</h4>
                 <span>Soluciones de Procesos</span>
@@ -559,34 +544,32 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-            in iste officiis commodi quidem hic quas.</p>
+          <h2>Contáctenos</h2>
+          <p>Complete su información de contacto y nos comunicaremos con usted.</p>
         </div>
 
         <div class="row">
           <div class="col-lg-6">
             <div class="info-box mb-4">
               <i class="bx bx-map"></i>
-              <h3>Our Address</h3>
-              <p>A108 Adam Street, New York, NY 535022</p>
+              <h3>Dirección</h3>
+              <p>Residencial el Bosque<br>30 calle zona 11<br>Ciudad de Guatemala, Guatemala</p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6">
             <div class="info-box  mb-4">
               <i class="bx bx-envelope"></i>
-              <h3>Email Us</h3>
-              <p>contact@example.com</p>
+              <h3>Correo</h3>
+              <p>correo@gmail.com</p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6">
             <div class="info-box  mb-4">
               <i class="bx bx-phone-call"></i>
-              <h3>Call Us</h3>
-              <p>+1 5589 55488 55</p>
+              <h3>Teléfonos</h3>
+              <p>+502 54682406<br>+502 12345678</p>
             </div>
           </div>
 
@@ -596,7 +579,7 @@
 
           <div class="col-lg-6 ">
             <iframe class="mb-4 mb-lg-0"
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1188.7262678233737!2d-90.55076674952325!3d14.592184488766163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a1fe8d1b0e41%3A0x8016b0fe6e25549c!2sResidencial%20El%20Bosque!5e0!3m2!1ses!2sgt!4v1622965821735!5m2!1ses!2sgt"
               frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
           </div>
 
@@ -604,24 +587,24 @@
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Correo" required>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
               </div>
               <div class="my-3">
-                <div class="loading">Loading</div>
+                <div class="loading">Cargando</div>
                 <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                <div class="sent-message">Su mensaje ha sido enviado. !Gracias!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
             </form>
           </div>
 
@@ -642,14 +625,13 @@
 
           <div class="col-lg-4 col-md-6">
             <div class="footer-info">
-              <h3>Squadfree</h3>
-              <p class="pb-3"><em>Qui repudiandae et eum dolores alias sed ea. Qui suscipit veniam excepturi quod.</em>
+              <h3>INSAAPI</h3>
+              <p class="pb-3"><em>Nos especializamos en hacer soluciones rápidas e innovadoras.</em>
               </p>
               <p>
-                A108 Adam Street <br>
-                NY 535022, USA<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
+                Residencial el Bosque<br>30 calle aona 11<br>ciudad de Guatemala, Guatemala<br><br>
+                <strong>Teléfonos:</strong> +502 54682406<br>+502 12345678<br>
+                <strong>Correos:</strong> correo@gmail.com<br>
               </p>
               <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -661,35 +643,37 @@
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
+          <div class="col-lg-2 col-lg-offset-12 footer-links">
+            <h4>Enlaces útiles</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Inicio</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">Acerca de nosotros</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#testimonials">Equipo de Trabajo</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#team">Clientes</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contáctenos</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Our Services</h4>
+            <h4>Nuestros Servicios</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Desarrollo de programas<br>y páginas web</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'portfolio' %}">Portafolio</a></li>
+              <!--<li><i class="bx bx-chevron-right"></i> <a href="#">Aplicaciones Web</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Aplicaciones de Escritorio</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Aplicaciones Móviles</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Páginas Web</a></li>-->
             </ul>
           </div>
 
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Otros enlaces</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Dominios</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Alojamiento</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Términos de servicio</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Políticas de Privacidad</a></li>
+            </ul>
           </div>
 
         </div>
@@ -698,14 +682,10 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Squadfree</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>INSAAPI</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a><strong><span>INSAAPI</span></strong></a>
       </div>
     </div>
   </footer><!-- End Footer -->

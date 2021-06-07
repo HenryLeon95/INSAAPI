@@ -6,3 +6,6 @@ from django.views.generic import TemplateView
 #     return render(request, "base.html")
 class HomePageView(TemplateView):
     template_name = 'base.html'
+
+class PortfolioPageView(TemplateView):
+    template_name = 'pages/portafolio.html'
