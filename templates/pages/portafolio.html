@@ -8,23 +8,20 @@ Portafolio - INSAAPI
 {% block header %}
 <!-- ======= Header ======= -->
 <header id="header" class="fixed-top header-transparent">
-    <div class="container d-flex align-items-center justify-content-between">
-
-        <div class="logo">
-            <h1 class="text-light">
-                <a href="/"><img src="../static/assets/img/g2.jpg" alt="" class="img-fluid">
-                    <span>INSAAPI</span>
-                </a>
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs" style="background-color:transparent">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <ol>
+                    <li><a href="/"><img src="../static/assets/img/g2.jpg" width="50" height="50" alt=""
+                                class="img-fluid">
+                            <span><strong>INICIO</strong></span>
+                        </a></li>
+                    <li style="color: aliceblue; font-size:larger;">Portfolio</li>
+                </ol>
+            </div>
         </div>
-
-        <nav id="navbar" class="navbar">
-            <ul>
-                <li><a class="nav-link scrollto active" href="{% url 'home' %}">Inicio</a></li>
-            </ul>
-            <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav><!-- .navbar -->
-
-    </div>
+    </section><!-- Breadcrumbs Section -->
 </header><!-- End Header -->
 {% endblock header %}
 
@@ -37,20 +34,95 @@ Portafolio - INSAAPI
             <div class="row gy-4">
                 <div class="col-lg-8">
                     <div class="portfolio-details-slider swiper-container">
-                        <div class="swiper-wrapper align-items-center">
-
+                        <div class="swiper-wrapper align-items-center" style="text-align: center;">
                             <div class="swiper-slide">
-                                <img src="assets/img/portfolio/portfolio-1.jpg" alt="">
+                                1. Administración del psersonal administrativo.
+                                <img src="{% static 'assets/img/portfolio/OD/odport01.png' %}" alt="">
                             </div>
-
                             <div class="swiper-slide">
-                                <img src="assets/img/portfolio/portfolio-2.jpg" alt="">
+                                2. Administración de los clientes.
+                                <img src="{% static 'assets/img/portfolio/OD/odport02.png' %}" alt="">
                             </div>
-
                             <div class="swiper-slide">
-                                <img src="assets/img/portfolio/portfolio-3.jpg" alt="">
+                                3. Administración de los proveedores.
+                                <img src="{% static 'assets/img/portfolio/OD/odport03.png' %}" alt="">
                             </div>
-
+                            <div class="swiper-slide">
+                                4. Administración de marcas.
+                                <img src="{% static 'assets/img/portfolio/OD/odport04.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                5. Administración de categorías.
+                                <img src="{% static 'assets/img/portfolio/OD/odport05.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                6. Administración de productos.
+                                <img src="{% static 'assets/img/portfolio/OD/odport06.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                7. Administración de garantías.
+                                <img src="{% static 'assets/img/portfolio/OD/odport07.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                8. Buscar clientes / proveedores.
+                                <img src="{% static 'assets/img/portfolio/OD/odport08.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                9. Buscar productos.
+                                <img src="{% static 'assets/img/portfolio/OD/odport09.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                10. Creación de Factura (Serie y No).
+                                <img src="{% static 'assets/img/portfolio/OD/odport10.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                11. Agregar Cliente.
+                                <img src="{% static 'assets/img/portfolio/OD/odport11.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                12. Agregar productos.
+                                <img src="{% static 'assets/img/portfolio/OD/odport13.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                13. Agregar Descuentos.
+                                <img src="{% static 'assets/img/portfolio/OD/odport14.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                14. Agregar Garantía.
+                                <img src="{% static 'assets/img/portfolio/OD/odport15.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                15. Incluir IVA o no.
+                                <img src="{% static 'assets/img/portfolio/OD/odport16.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                16. Plantilla para Factura de empresa personalizada.
+                                <img src="{% static 'assets/img/portfolio/OD/odport17.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                17. Plantilla para Cotizaciones (Igual a la O. De Compra).
+                                <img src="{% static 'assets/img/portfolio/OD/odport19_2.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                18. Plantilla para Notas de Entrega.
+                                <img src="{% static 'assets/img/portfolio/OD/odport20_2.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                19. Reporte de inventario ordenado por categoría.
+                                <img src="{% static 'assets/img/portfolio/OD/odport21_2.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                20. Reporte de inventario ordenado por marca.
+                                <img src="{% static 'assets/img/portfolio/OD/odport22.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                21. Historial de Facturas (Igual a la Cotización, O. De Compra y Sólo para administrador).
+                                <img src="{% static 'assets/img/portfolio/OD/odport24.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                22. Historial de Notas de Entrega (Sólo para administrador).
+                                <img src="{% static 'assets/img/portfolio/OD/odport25.png' %}" alt="">
+                            </div>
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
@@ -58,30 +130,66 @@ Portafolio - INSAAPI
 
                 <div class="col-lg-4">
                     <div class="portfolio-info">
-                        <h3>Project information</h3>
+                        <h3>Aplicaciones Web, escritorio y móviles</h3>
                         <ul>
-                            <li><strong>Category</strong>: Web design</li>
-                            <li><strong>Client</strong>: ASU Company</li>
-                            <li><strong>Project date</strong>: 01 March, 2020</li>
-                            <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                            <li><strong>Category</strong>: Programa Web</li>
+                            <li><strong>Client</strong>: OpenDigital</li>
+                            <li><strong>Project date</strong>: 01 Junio, 2021</li>
                         </ul>
                     </div>
                     <div class="portfolio-description">
-                        <h2>This is an example of portfolio detail</h2>
+                        <h2>Control Administrativo / Facturación / Inventario</h2>
                         <p>
-                            Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore
-                            quia
-                            quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim.
-                            Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi
-                            nulla
-                            at esse enim cum deserunt eius.
+                            La gestión eficiente de los recursos adquiere una gran importancia para ayudar a las
+                            organizaciones a generar un alto retorno de la inversión. Un plan para utilizar de manera
+                            óptima los recursos es muy importante para determinar si un proyecto se implementa con éxito
+                            o no.
+                        </p>
+                        <p>
+                            OpenDigital quiso llevar su empresa a un nuevo nivel. Consolidando las áreas
+                            administrativas, facturación y de inventario en un sólo sistema y sobre todo, migrar a la
+                            nube para que pueda ser consultado y utilizado desde cualquier sucursal a su disposición.
+                            <br>INSAAPI cumplió y sobrepasó sus espectativas desarrollando un Sistema escalable y
+                            seguro con opciones como:
+                        <ul>
+                            <li>Control Administrativo
+                                <ul>
+                                    <li>Roles</li>
+                                    <li>Administración del personal</li>
+                                    <li>Administración de los clientes</li>
+                                    <li>Administración de los proveedores</li>
+                                </ul>
+                            </li>
+                            <li>Inventario
+                                <ul>
+                                    <li>Administración de las marcas de sus productos con o sin imágenes</li>
+                                    <li>Administración de las Categorías de sus productos</li>
+                                    <li>Administración de las Imágenes de sus productos</li>
+                                    <li>Administración de las garantías de sus productos</li>
+                                </ul>
+                            </li>
+                            <li>Facturación
+                                <ul>
+                                    <li>Administración de facturas</li>
+                                    <li>Administración de Cotizaciones</li>
+                                    <li>Administración de Notas de Entrega</li>
+                                    <li>Administración de Órdenes de Compra</li>
+                                </ul>
+                            </li>
+                            <li>Reportería
+                                <ul>
+                                    <li>Reporte de productos ordenados por categorías</li>
+                                    <li>Reporte de productos ordenados por marcas</li>
+                                </ul>
+                            </li>
+                        </ul>
                         </p>
                     </div>
                 </div>
             </div>
 
             <hr>
-            
+
             <div class="row gy-4">
 
                 <div class="col-lg-8">
