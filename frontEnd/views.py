@@ -12,3 +12,9 @@ class PortfolioPageView(TemplateView):
 
 class ServicePageView(TemplateView):
     template_name = 'pages/services.html'
+
+class Domain_HostingPageView(TemplateView):
+    template_name = 'pages/domains-hosting.html'
+
+class Terms_ConditionsPageView(TemplateView):
+    template_name = 'pages/terms-conditions.html'

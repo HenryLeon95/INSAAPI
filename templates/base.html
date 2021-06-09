@@ -200,7 +200,7 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <div class="icon"><i class="bx bx-home"></i></div>
-              <h4 class="title"><a href="">Dominios</a></h4>
+              <h4 class="title"><a href="{% url 'domains_hosting' %}">Dominios</a></h4>
               <p class="description">Brindamos dominios de distintos proveedores para que se acomoden a su necesidad.
               </p>
             </div>
@@ -209,7 +209,7 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
               <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a href="">Alojamiento</a></h4>
+              <h4 class="title"><a href="{% url 'domains_hosting' %}">Alojamiento</a></h4>
               <p class="description">Contatmos con un ampplio conocimiento para migrar su programa a la nube en
                 distintos servicios y planes para que se acomoden a su negocio o empresa.
                 También brindamos seguimientos y soporte a los servicios de Aws (Amazon Web Servies).
@@ -668,9 +668,8 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Otros enlaces</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Dominios y Alojamiento</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Términos de servicio</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Políticas de Privacidad</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'domains_hosting' %}">Dominios y Alojamiento</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'terms_conditions' %}">Términos de servicio<br>y políticas de privacidad</a></li>
             </ul>
           </div>
 
