@@ -9,3 +9,6 @@ class HomePageView(TemplateView):
 
 class PortfolioPageView(TemplateView):
     template_name = 'pages/portafolio.html'
+
+class ServicePageView(TemplateView):
+    template_name = 'pages/services.html'
