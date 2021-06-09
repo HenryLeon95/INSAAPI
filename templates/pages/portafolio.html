@@ -1,0 +1,322 @@
+{%extends 'base.html'%}
+{% load static %}
+
+{% block title %}
+Portafolio - INSAAPI
+{% endblock title %}
+
+{% block header %}
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top header-transparent">
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs" style="background-color:transparent">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <ol>
+                    <li><a href="/"><img src="../static/assets/img/g2.jpg" width="50" height="50" alt=""
+                                class="img-fluid">
+                            <span><strong>INICIO</strong></span>
+                        </a></li>
+                    <li style="color: aliceblue; font-size:larger;">Portfolio</li>
+                </ol>
+            </div>
+        </div>
+    </section><!-- Breadcrumbs Section -->
+</header><!-- End Header -->
+{% endblock header %}
+
+{% block innerBody %}
+
+<main id="main">
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-8">
+                    <div class="portfolio-details-slider swiper-container">
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-wrapper align-items-center" style="text-align: center;">
+                            <div class="swiper-slide">
+                                1. Administración del psersonal administrativo.
+                                <img src="{% static 'assets/img/portfolio/OD/odport01.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                2. Administración de los clientes.
+                                <img src="{% static 'assets/img/portfolio/OD/odport02.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                3. Administración de los proveedores.
+                                <img src="{% static 'assets/img/portfolio/OD/odport03.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                4. Administración de marcas.
+                                <img src="{% static 'assets/img/portfolio/OD/odport04.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                5. Administración de categorías.
+                                <img src="{% static 'assets/img/portfolio/OD/odport05.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                6. Administración de productos.
+                                <img src="{% static 'assets/img/portfolio/OD/odport06.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                7. Administración de garantías.
+                                <img src="{% static 'assets/img/portfolio/OD/odport07.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                8. Buscar clientes / proveedores.
+                                <img src="{% static 'assets/img/portfolio/OD/odport08.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                9. Buscar productos.
+                                <img src="{% static 'assets/img/portfolio/OD/odport09.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                10. Creación de Factura (Serie y No).
+                                <img src="{% static 'assets/img/portfolio/OD/odport10.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                11. Agregar Cliente.
+                                <img src="{% static 'assets/img/portfolio/OD/odport11.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                12. Agregar productos.
+                                <img src="{% static 'assets/img/portfolio/OD/odport13.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                13. Agregar Descuentos.
+                                <img src="{% static 'assets/img/portfolio/OD/odport14.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                14. Agregar Garantía.
+                                <img src="{% static 'assets/img/portfolio/OD/odport15.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                15. Incluir IVA o no.
+                                <img src="{% static 'assets/img/portfolio/OD/odport16.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                16. Plantilla para Factura de empresa personalizada.
+                                <img src="{% static 'assets/img/portfolio/OD/odport17.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                17. Plantilla para Cotizaciones (Igual a la O. De Compra).
+                                <img src="{% static 'assets/img/portfolio/OD/odport19_2.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                18. Plantilla para Notas de Entrega.
+                                <img src="{% static 'assets/img/portfolio/OD/odport20_2.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                19. Reporte de inventario ordenado por categoría.
+                                <img src="{% static 'assets/img/portfolio/OD/odport21_2.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                20. Reporte de inventario ordenado por marca.
+                                <img src="{% static 'assets/img/portfolio/OD/odport22.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                21. Historial de Facturas (Igual a la Cotización, O. De Compra y Sólo para
+                                administrador).
+                                <img src="{% static 'assets/img/portfolio/OD/odport24.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                22. Historial de Notas de Entrega (Sólo para administrador).
+                                <img src="{% static 'assets/img/portfolio/OD/odport25.png' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="portfolio-info">
+                        <h3>Aplicaciones Web, escritorio, móviles o CRM</h3>
+                        <ul>
+                            <li><strong>Categorúa</strong>: Programa Web</li>
+                            <li><strong>Cliente</strong>: OpenDigital</li>
+                            <li><strong>Fecha del Proyecto</strong>: 01 Junio, 2021</li>
+                        </ul>
+                    </div>
+                    <div class="portfolio-description">
+                        <h2>Control Administrativo / Facturación / Inventario</h2>
+                        <p>
+                            La gestión eficiente de los recursos adquiere una gran importancia para ayudar a las
+                            organizaciones a generar un alto retorno de la inversión. Un plan para utilizar de manera
+                            óptima los recursos es muy importante para determinar si un proyecto se implementa con éxito
+                            o no.
+                        </p>
+                        <p>
+                            OpenDigital quiso llevar su empresa a un nuevo nivel. Consolidando las áreas
+                            administrativas, facturación y de inventario en un sólo sistema y sobre todo, migrar a la
+                            nube para que pueda ser consultado y utilizado desde cualquier sucursal a su disposición.
+                            <br>INSAAPI cumplió y sobrepasó sus espectativas desarrollando un Sistema escalable y
+                            seguro con opciones como:
+                        <ul>
+                            <li>Control Administrativo
+                                <ul>
+                                    <li>Roles</li>
+                                    <li>Administración del personal</li>
+                                    <li>Administración de los clientes</li>
+                                    <li>Administración de los proveedores</li>
+                                </ul>
+                            </li>
+                            <li>Inventario
+                                <ul>
+                                    <li>Administración de las marcas de sus productos con o sin imágenes</li>
+                                    <li>Administración de las Categorías de sus productos</li>
+                                    <li>Administración de las Imágenes de sus productos</li>
+                                    <li>Administración de las garantías de sus productos</li>
+                                </ul>
+                            </li>
+                            <li>Facturación
+                                <ul>
+                                    <li>Administración de facturas</li>
+                                    <li>Administración de Cotizaciones</li>
+                                    <li>Administración de Notas de Entrega</li>
+                                    <li>Administración de Órdenes de Compra</li>
+                                </ul>
+                            </li>
+                            <li>Reportería
+                                <ul>
+                                    <li>Reporte de productos ordenados por categorías</li>
+                                    <li>Reporte de productos ordenados por marcas</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row gy-4">
+
+                <div class="col-lg-8">
+                    <div class="portfolio-details-slider swiper-container">
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-wrapper align-items-center">
+
+                            <div class="swiper-slide">
+                                <img src="{% static 'assets/img/portfolio/pages/portfolio00.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{% static 'assets/img/portfolio/pages/portfolio01.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{% static 'assets/img/portfolio/pages/portfolio02.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{% static 'assets/img/portfolio/pages/portfolio03.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{% static 'assets/img/portfolio/pages/portfolio04.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{% static 'assets/img/portfolio/pages/portfolio05.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{% static 'assets/img/portfolio/pages/portfolio06.png' %}" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="portfolio-info">
+                        <h3>Páginas Web</h3>
+                        <ul>
+                            <li><strong>Categoría</strong>: Diseños Web</li>
+                        </ul>
+                    </div>
+                    <div class="portfolio-description">
+                        <h2>Páginas Web</h2>
+                        <p>
+                            Proporcionamos páginas web elegantes y profesionaes al gusto del cliente. Desde páginas
+                            completas (iguales a la presente), una sóla página (Inicio, Acerca de, Servicios,
+                            Portafolio, Cantaco, Misión y Visión, Página de aterrizaje o cualquier página que imagine
+                            o desee el cliente).
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="row gy-4">
+
+                <div class="col-lg-8">
+                    <div class="portfolio-details-slider swiper-container">
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-wrapper align-items-center">
+
+                            <div class="swiper-slide">
+                                <img src="{% static 'assets/img/portfolio/pages/od2portfolio00.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{% static 'assets/img/portfolio/pages/od2portfolio01.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{% static 'assets/img/portfolio/pages/od2portfolio02.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{% static 'assets/img/portfolio/pages/od2portfolio03.png' %}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{% static 'assets/img/portfolio/pages/od2portfolio04.png' %}" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="portfolio-info">
+                        <h3>E-commerce</h3>
+                        <ul>
+                            <li><strong>Categoría</strong>: B2B, B2C y B2G</li>
+                            <li><strong>Cliente</strong>: OpenDigital</li>
+                            <li><strong>Fecha del Proyecto</strong>: En desarollo...</li>
+                        </ul>
+                    </div>
+                    <div class="portfolio-description">
+                        <h2>E-commerce</h2>
+                        <p>
+                            Creamos potentes sistemas E-commerce para cualquier tipo de negocio o empresa, ya sea
+                            pequeña, mediana o grande. Proporcionamos soporte para compra y venta en línea, procesos de
+                            pago, integridad en sus datos y aseguramos seguridad en cada transacción y
+                            utilización del sistema.<br>
+                            Proporciamos servicios de inteligencia artificial como:
+                            <ul>
+                                <li>Chatbots.</li>
+                                <li>Traductor de idiomas.</li>
+                                <li>Reconocimiento facial para sistemas de seguridad.</li>
+                            </ul>
+                            También brindamos marketing digital en las distntas redes sociales
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Portfolio Details Section -->
+</main>
+{% endblock innerBody %}
+
+{% block footer %}
+<!-- ======= Footer ======= -->
+<footer id="footer">
+    <div class="container">
+        <div class="copyright">
+            &copy; Copyright <strong><span>INSAAPI</span></strong>. All Rights Reserved.
+        </div>
+        <div class="credits">
+            Designed by <a><strong><span>INSAAPI</span></strong>.</a>
+        </div>
+    </div>
+</footer><!-- End Footer -->
+{% endblock footer %}
